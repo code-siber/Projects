@@ -1,18 +1,18 @@
-  Arithmetic operator 
+ # ? Arithmetic operator 
 #   Arithmetic operator = (+, -, %, *, /, **, //)
-  relational operator = 
+  # ? relational operator = 
 #   relational operator = (>, <, <=, >=, ==, !=)
-  Logical operators   = 
+# ? Logical operators   = 
 #   Logical operators = (and, or, not)
-  membership operator = 
+  # ? membership operator = 
 #   membership operator = (in, not in)
-  Assignment Operator = 
+  # ? Assignment Operator = 
 #   Assignment Operator = (=, +=, -=, *=, /=)
-  Input statement = 
+  # ? Input statement = 
 #   (input(x))
 
 
-   OTHER
+  # ? OTHER
 #   Tab = /t
 #   Separate = sep()
 #   Control flow statements 
@@ -20,12 +20,12 @@
 #         if statement
 #         if , elif, else
 
-___________________________________________________________________________________________
+# !___________________________________________________________________________________________
 
-   Looping statement
-   Finite Loop  :
+  # ? Looping statement
+  # ? Finite Loop  :
 #  for loop
-   Infinite Loop :
+  # ? Infinite Loop :
 #   While loop
 #       while True:
 #        if not condition 
@@ -42,10 +42,10 @@ ________________________________________________________________________________
 #             # lIKE EXAMPLE = (1,10) ONLY INCREASE NUMBER COUNT BY 1 AND IF WE ADD STEP 2 THEN THE DEFAULT INCREASE WILL BE CHANGED TO 2
 
 
-____________________________________________________________________________________________
+  # !____________________________________________________________________________________________
 
 
-         Function
+  # ? Function
 #    Def func(parameter):
 #         syntax()
 #    put syntax to determine variable
@@ -53,26 +53,26 @@ ________________________________________________________________________________
 #  Function call : func(parameter is also known as argument in call. )
 #  Keyword argument : func(name="str") {where name is parameter or argument, In order to specify the type like "str" is name but not other any parameter}
 #  Default parameter : giving a parameter default value like if i want greeting hi as default in def func(greeting = "HI")
-         Argument holder :
+    # ?Argument holder :
 #                    [def func(*args)]
 #                    [OUTPUT = 1, 10, 2, 50] {any num of arguments}
-         Return = 
+    # ? Return = 
 #             .return = returns value in def
 #  .insert() or .append() in variable add value
 #  .pop() or del function = remove from variable 
 #  u can choose place by adding number where 0 is the starting 
 #  variable1 = variable.pop() shows the variable that is removed
 #  Tuple > once created, cannot change
-          List = 
+  # ? List = 
 #       used to store value also denoted by [] which can be changed unlike tuple
 #  from 1 part of list to another like [0,1,2,3,4] ma 2 to 4 samma chhaio bhaney ":" is used like
                 #  a = [0,1,2,3,4] { position is determined by starting with 0}
                 #  b = a[2:4]
         
- _________________________________________________________________________________________________________________       
+  # !_________________________________________________________________________________________________________________       
         
         
-          .intersection 
+  # ?.intersection 
 #               = common elements between 2 variables
                 # common = variable1.intersection(variable2) or common = variable1 & variable2
 #  .union = include all between 2 variables or | also perform same
@@ -84,13 +84,13 @@ ________________________________________________________________________________
 #   "name" : "User"
     # Keys       value
 
-__________________________________________________________________________________________
+# !__________________________________________________________________________________________
 
-            enumerate = 
+    # ? enumerate = 
 #       like number ra students lai 1.) students format ma dinxa
 
 
-           modules = 
+    # ? modules = 
 #       import module , from module import packages, from module import * then del unwanted module
 
 # MODULE LIST
@@ -109,9 +109,9 @@ ________________________________________________________________________________
         # finally:
 
 
-_______________________________________________________________________________________
+# !_______________________________________________________________________________________
 
-file handling =
+    # ? file handling =
         # file = open("file.txt", "r")
         # open file
         # read file = r
@@ -138,10 +138,10 @@ file handling =
 # a denotes append mode
 # r denotes read mode
 
-___________________________________________________________________________________________
+# !___________________________________________________________________________________________
 
 
-    lamda function = 
+    # ? lamda function = 
 #  lamda function without name
 #  add(Variable) = lambda x, y : x + y
 #  add(2, 3)
@@ -152,23 +152,23 @@ ________________________________________________________________________________
 # for example : def add(function as parameter or argument):
 #                 return function
 
-_________________________________________________________________________________________
+# !_________________________________________________________________________________________
 
-          filter()= 
+    # ? filter()= 
 # all_num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # even_num = list[filter(lamda num: num % 2 == 0, all_num)]
 # print(even_num)
 
-__________________________________________________________________________________________________
+# !__________________________________________________________________________________________________
 
-OOP = Object oriented programming
+# ? OOP = Object oriented programming
 # class =(always start with capital letter) 
           # blueprint or what type of object (like car, bike, laptop etc) u want to create
 # object = product and its properties/ object related data
 
-example =
+# ? example =
 # class Car:  
-      pass
+      # pass
 # car1 = Car() {object of class car}
 # class Car:
 #       def __init__(self, color, make, model):
@@ -177,6 +177,3 @@ example =
 #             self.make = make
 #             self.model = model
 # farari = car("red", "toyota", "farari")   { if we dont fill the parameter for the object it shows error like red for color, toyota for make and farari for model}
-
-class ->  new datatype with full control over other data and its behaviour
-object -> 
