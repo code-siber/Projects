@@ -1,0 +1,233 @@
+Data Types & Variables
+# Numbers
+x = 10        # int
+y = 3.14      # float
+
+# Boolean
+flag = True
+
+# Strings
+s = "Hello"
+print(len(s))       # 5
+print(s[0])         # 'H'
+print(s[1:4])       # 'ell'
+print(s + " World") # Concatenation
+print(s * 3)        # 'HelloHelloHello'
+
+# Lists
+lst = [1, 2, 3]
+lst.append(4)
+lst.remove(2)
+print(lst[0])       # 1
+print(len(lst))     # 3
+
+# Tuples (immutable)
+tup = (1, 2, 3)
+
+# Dictionary
+d = {"name": "Alice", "age": 18}
+print(d["name"])
+d["age"] = 19
+
+# Sets
+s = {1, 2, 3}
+s.add(4)
+s.remove(2)
+
+2️⃣ Input & Type Conversion
+a = input("Enter something: ")   # Always string
+num = int(input("Enter a number: "))
+flt = float(input("Enter a float: "))
+
+# Type conversion
+x = str(100)
+y = int("50")
+z = float("3.14")
+
+3️⃣ Operators
+# Arithmetic
++, -, *, /, %, //, **
+
+# Comparison
+==, !=, >, <, >=, <=
+
+# Logical
+and, or, not
+
+# Assignment
+=, +=, -=, *=, /=
+
+# Membership
+in, not in
+
+# Identity
+is, is not
+
+4️⃣ Conditions
+if x > y:
+    print("x > y")
+elif x == y:
+    print("x == y")
+else:
+    print("x < y")
+
+# Ternary
+result = "Even" if x % 2 == 0 else "Odd"
+
+5️⃣ Loops
+# For loop
+for i in range(1, 6):
+    print(i)
+
+# Loop through list
+lst = [1,2,3]
+for item in lst:
+    print(item)
+
+# While loop
+n = 5
+while n > 0:
+    print(n)
+    n -= 1
+
+# Break and continue
+for i in range(5):
+    if i == 3:
+        break  # exit loop
+    if i == 1:
+        continue  # skip iteration
+    print(i)
+
+6️⃣ Functions
+# Basic function
+def greet(name):
+    print("Hello", name)
+
+greet("Alice")
+
+# Function with return
+def add(a, b):
+    return a + b
+
+result = add(2, 3)
+
+# Default arguments
+def power(x, y=2):
+    return x**y
+
+# Arbitrary arguments
+def sum_all(*args):
+    return sum(args)
+
+# Keyword arguments
+def info(**kwargs):
+    print(kwargs)
+
+7️⃣ Recursion
+# Factorial example
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+8️⃣ Error Handling (Try-Except)
+try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("Always runs")
+
+9️⃣ Lists, Tuples, Sets, Dictionaries — Advanced
+# List comprehension
+lst = [x**2 for x in range(5)]  # [0,1,4,9,16]
+
+# Dictionary iteration
+d = {"a":1, "b":2}
+for key, val in d.items():
+    print(key, val)
+
+# Set operations
+a = {1,2,3}
+b = {2,3,4}
+print(a.union(b))      # {1,2,3,4}
+print(a.intersection(b)) # {2,3}
+
+🔟 Strings — Useful Methods
+s = " hello "
+print(s.strip())      # "hello"
+print(s.upper())      # " HELLO "
+print(s.lower())      # " hello "
+print(s.replace("h","H"))  # " Hello "
+print(s.split())      # ['hello']
+print("-".join(["a","b","c"]))  # 'a-b-c'
+
+1️⃣1️⃣ Object-Oriented Programming (OOP)
+# Class and Object
+class Dog:
+    species = "Canine"  # Class variable
+
+    def __init__(self, name, age):
+        self.name = name   # Instance variable
+        self.age = age
+
+    def bark(self):
+        print("Woof! My name is", self.name)
+
+# Object creation
+dog1 = Dog("Buddy", 3)
+dog1.bark()
+
+# Inheritance
+class Puppy(Dog):
+    def play(self):
+        print(self.name, "is playing")
+
+p = Puppy("Max", 1)
+p.bark()
+p.play()
+
+1️⃣2️⃣ Tkinter (GUI Basics)
+import tkinter as tk
+
+# Function to run on click
+def on_click():
+    print("Button clicked!")
+
+# Window
+root = tk.Tk()
+root.title("My App")
+root.geometry("300x200")
+
+# Button
+btn = tk.Button(root, text="Click Me", command=on_click)
+btn.pack(pady=20)
+
+# Label
+lbl = tk.Label(root, text="Hello Tkinter!")
+lbl.pack()
+
+# Entry
+entry = tk.Entry(root)
+entry.pack()
+
+# Run GUI
+root.mainloop()
+
+✅ Quick Tips
+
+Always convert input if needed.
+
+Use self for class instance variables.
+
+Loop through range(n) for counting.
+
+try-except prevents program crash.
+
+Keep small Tkinter functions separate and link via command.
+
+Test small pieces first, then combine.
